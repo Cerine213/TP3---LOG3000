@@ -1,3 +1,9 @@
+/*
+*** style.css ***
+
+Description    : Feuille de style de la calculatrice. Définit la mise en page, 
+                 la palette de couleurs et les interactions des boutons.
+*/
 body {
    font-family: Arial, sans-serif;
    background-color: #f0f0f0;
