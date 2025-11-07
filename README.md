@@ -10,6 +10,7 @@ L’interface web est générée via un fichier HTML et les calculs sont exécut
 
 ## Structure du projet
 
+```bash
 TP3-LOG3000/
 │
 ├── app.py # Application principale Flask
@@ -27,7 +28,7 @@ TP3-LOG3000/
 │ └── test_operators.py # Tests unitaires pour les opérations
 │
 └── README.md # Documentation du projet
-
+```
 ---
 
 ## 🧩 Prérequis d’installation
