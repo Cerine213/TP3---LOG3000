@@ -1,13 +1,12 @@
 """
 *** test_app.py ***
 
-Description    : Tests unitaires pour le serveur Flask (app.py).
-                 Vérifie le bon fonctionnement de la route principale et 
-                 l'évaluation des expressions arithmétiques.
-Dépendances    :
-- app.py
-- unittest (module standard Python)
-- Flask (test client)
+Description : Tests unitaires pour le serveur Flask (app.py). Vérifie le bon fonctionnement de la route principale
+              et l'évaluation des expressions arithmétiques.
+Dépendances :
+    - app.py
+    - unittest (module standard Python)
+    - Flask (test client)
 """
 
 import unittest
@@ -28,22 +27,22 @@ class TestFlaskApp(unittest.TestCase):
         self.assertIn(b'Flask Calculator', response.data)
 
     def test_post_addition(self):
-        """Vérifie qu'une addition simple est calculée correctement."""
+        """Vérifie que le résultat d'une addition simple est affiché correctement."""
         response = self.client.post('/', data={'display': '2+3'})
         self.assertIn(b'5.0', response.data)
 
     def test_post_subtraction(self):
-        """Vérifie qu'une soustraction simple est calculée correctement."""
+        """Vérifie que le résultat d'une soustraction simple est affiché correctement."""
         response = self.client.post('/', data={'display': '5-2'})
         self.assertIn(b'3.0', response.data)
 
     def test_post_multiplication(self):
-        """Vérifie qu'une multiplication simple est calculée correctement."""
+        """Vérifie que le résultat d'une multiplication simple est affiché correctement."""
         response = self.client.post('/', data={'display': '2*3'})
         self.assertIn(b'6.0', response.data)
 
     def test_post_division(self):
-        """Vérifie qu'une division simple est calculée correctement."""
+        """Vérifie que le résultat d'une division simple est affiché correctement."""
         response = self.client.post('/', data={'display': '6/2'})
         self.assertIn(b'3.0', response.data)
 

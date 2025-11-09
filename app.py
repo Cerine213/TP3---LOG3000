@@ -1,12 +1,12 @@
 """
 *** app.py ***
 
-Description    : Fichier principal du serveur Flask. Gère les requêtes HTTP, 
-                 l'affichage du frontend et l'exécution des calculs arithmétiques.
+Description : Fichier principal du serveur Flask. Gère les requêtes HTTP, l'affichage du frontend et l'exécution
+              des calculs arithmétiques.
                  
 Dépendances :
-- Flask (framework web)
-- operators.py (module local contenant les fonctions d'opérations de base)
+    - Flask (framework web)
+    - operators.py (module local contenant les fonctions d'opérations de base)
 """
 
 from flask import Flask, request, render_template

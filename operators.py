@@ -1,10 +1,9 @@
 """
 *** operators.py ***
 
-Description    : Module contenant les opérations arithmétiques de base.
-                 Utilisé par app.py pour effectuer les calculs.
+Description : Module contenant les opérations arithmétiques de base. Utilisé par app.py pour effectuer les calculs.
 Dépendances :
-- Aucune dépendance externe.
+    - Aucune dépendance externe.
 """
 
 def add(a,b):
@@ -49,7 +48,7 @@ def multiply(a,b):
 
 def divide(a,b):
     """
-    Effectue la division de deux nombres.
+    Effectue la division flottante de deux nombres.
 
     Entrées:
         a (float): Numérateur.

@@ -1,12 +1,11 @@
 """
 *** test_operators.py ***
 
-Description    : Tests unitaires pour le module operators.py.
-                 Vérifie le bon fonctionnement des fonctions arithmétiques
-                 et détecte les bogues éventuels.
-Dépendances    :
-- operators.py
-- unittest (module standard Python)
+Description : Tests unitaires pour le module operators.py. Vérifie le bon fonctionnement des fonctions arithmétiques
+              et détecte les bogues éventuels.
+Dépendances :
+    - operators.py
+    - unittest (module standard Python)
 """
 
 import unittest
@@ -54,7 +53,7 @@ class TestOperators(unittest.TestCase):
 
     def test_divide_negative_numbers(self):
         """Vérifie divide() avec des nombres négatifs."""
-        self.assertEqual(divide(-6, 2), -3)  
+        self.assertEqual(divide(-5, 2), -2.5)
 
 if __name__ == '__main__':
     unittest.main()
