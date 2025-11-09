@@ -53,7 +53,7 @@ class TestOperators(unittest.TestCase):
 
     def test_divide_negative_numbers(self):
         """Vérifie divide() avec des nombres négatifs."""
-        self.assertEqual(divide(-5, 2), -2.)
+        self.assertEqual(divide(-5, 2), -2.5)
 
 if __name__ == '__main__':
     unittest.main()
