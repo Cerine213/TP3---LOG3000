@@ -18,7 +18,9 @@ Dépendances :
 <body>
 <div class="calculator">
    <h1>Flask Calculator</h1>
+   <!-- Formulaire principal : envoie la requête POST à Flask -->
    <form method="POST">
+      <!-- Zone d’affichage des entrées et du résultat -->
       <input type="text" name="display" id="display" value="{{ result }}" readonly>
 
       <div class="buttons">
@@ -46,11 +48,18 @@ Dépendances :
 </div>
 
 <script>
+   /**
+    * Ajoute la valeur passée en paramètre au champ d'affichage.
+    * @param {string} value - Caractère (chiffre ou opérateur) à ajouter.
+    */
    function appendToDisplay(value) {
       const display = document.getElementById('display');
       display.value += value;
    }
 
+    /**
+    * Réinitialise le champ d'affichage (efface tout le contenu).
+    */
    function clearDisplay() {
       document.getElementById('display').value = '';
    }
