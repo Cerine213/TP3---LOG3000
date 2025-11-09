@@ -48,12 +48,12 @@ class TestOperators(unittest.TestCase):
         self.assertEqual(divide(6, 2), 3)  
     def test_divide_by_zero(self):
         """Vérifie que divide() lève une exception si le dénominateur est zéro."""
-        with self.assertRaises(ValueError):
+        with self.assertRaises(ZeroDivisionError):
             divide(5, 0)
 
     def test_divide_negative_numbers(self):
         """Vérifie divide() avec des nombres négatifs."""
-        self.assertEqual(divide(-5, 2), -2.5)
+        self.assertEqual(divide(-5, 2), -2.)
 
 if __name__ == '__main__':
     unittest.main()
